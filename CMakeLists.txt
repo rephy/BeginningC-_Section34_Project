@@ -3,4 +3,6 @@ project(BeginningC___Section34_Project)
 
 set(CMAKE_CXX_STANDARD 26)
 
-add_executable(BeginningC___Section34_Project main.cpp)
+add_executable(BeginningC___Section34_Project main.cpp
+        Point.cpp
+        Point.h)
