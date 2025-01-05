@@ -34,7 +34,7 @@ class Point {
         double y {};
 
         //static variables
-        static unsigned int count;
+        inline static unsigned int count {};
 };
 
 

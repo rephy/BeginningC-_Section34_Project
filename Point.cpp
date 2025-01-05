@@ -3,8 +3,6 @@
 
 #include "Point.h"
 
-unsigned int Point::count {};
-
 Point::Point() : x(0), y(0) {
     count++;
 }

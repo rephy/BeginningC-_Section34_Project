@@ -16,5 +16,9 @@ int main() {
     std::cout << "p1.distance(-1, -1): " << p1.distance(-1, -1) << std::endl;
     std::cout << "p1.distance(p2): " << p1.distance(p2) << std::endl;
 
+    std::cout << std::endl;
+
+    std::cout << "Point::get_count(): " << Point::get_count() << std::endl;
+
     return 0;
 }
