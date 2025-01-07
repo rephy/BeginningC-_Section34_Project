@@ -3,6 +3,8 @@
 
 #include "Point.h"
 
+const Point* Point::origin {new Point(0, 0)};
+
 Point::Point() : x(0), y(0) {
     count++;
 }
@@ -17,18 +19,6 @@ Point::Point(double x, double y) : x(x), y(y) {
 
 Point::~Point() {
     count--;
-}
-
-double Point::distance() const {
-    return std::hypot(x, y);
-}
-
-double Point::distance(double x_p) const {
-    return std::hypot(x - x_p, y - x_p);
-}
-
-double Point::distance(double x_p, double y_p) const {
-    return std::hypot(x - x_p, y - y_p);
 }
 
 double Point::distance(const Point& p) const {
@@ -61,4 +51,8 @@ void Point::print_info() {
 
 unsigned int Point::get_count() {
     return count;
+}
+
+void cleanup() {
+    delete Point::origin;
 }

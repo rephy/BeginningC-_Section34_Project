@@ -13,10 +13,7 @@ class Point {
         ~Point();
 
         //member functions (const)
-        double distance() const;
-        double distance(double x) const;
-        double distance(double x, double y) const;
-        double distance(const Point& p) const;
+        double distance(const Point& p = *origin) const;
         double get_x() const;
         double get_y() const;
 
@@ -28,12 +25,16 @@ class Point {
 
         //static functions
         static unsigned int get_count();
+
+        //friend functions
+        friend void cleanup();
     private:
         //member variables
         double x {};
         double y {};
 
         //static variables
+        static const Point* origin;
         inline static unsigned int count {};
 };
 

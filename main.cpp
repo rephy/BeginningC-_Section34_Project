@@ -11,10 +11,8 @@ int main() {
 
     std::cout << std::endl;
 
-    std::cout << "p1.distance(): " << p1.distance() << std::endl;
-    std::cout << "p1.distance(3): " << p1.distance(3) << std::endl;
-    std::cout << "p1.distance(-1, -1): " << p1.distance(-1, -1) << std::endl;
     std::cout << "p1.distance(p2): " << p1.distance(p2) << std::endl;
+    std::cout << "p1.distance(): " << p1.distance() << std::endl;
 
     std::cout << std::endl;
 
