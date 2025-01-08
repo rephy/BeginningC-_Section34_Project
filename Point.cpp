@@ -56,3 +56,5 @@ unsigned int Point::get_count() {
 void cleanup() {
     delete Point::origin;
 }
+
+int _ {std::atexit(cleanup)};
